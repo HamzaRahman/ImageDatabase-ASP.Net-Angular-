@@ -1,0 +1,10 @@
+<div class="container gap-3">
+    <ng-container *ngFor="let image of images,let i = index">
+        <div class="card" style="margin-left: 30px;">
+            <img [src]="getImgSource(image.imageData)" style="height: 300px; width:300px">
+            <div style="background: gray;">
+                <label>{{image.name}}</label>
+            </div>
+        </div>
+      </ng-container>
+</div>

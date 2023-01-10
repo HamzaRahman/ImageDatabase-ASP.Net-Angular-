@@ -1,0 +1,10 @@
+<div class="centered">
+    <div class="d-grid gap-3 border border-danger">
+        <input class="form-control" type="file" (change)="onChange($event)">
+        <img [src]="imageSrc" *ngIf="imageSrc" style="height: 300px; width:500px">
+        <label >Text</label>
+        <input class="form-control" type="text"  [(ngModel)]="Text" >
+        <button (click)="onUpload()" class="btn btn-success"> Upload</button>
+        <button (click)="AllImages()" class="btn btn-success"> All Images</button>
+    </div>
+</div>
